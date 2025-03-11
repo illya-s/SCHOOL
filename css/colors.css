@@ -15,6 +15,7 @@
 		--txt-bn-color: #E5E5E5;
 
 		--hv-txt-color: #FFFFFF55;
+		justify-content: space-between;
 	}
 }
 @media (prefers-color-scheme: light) {

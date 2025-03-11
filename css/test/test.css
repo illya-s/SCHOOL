@@ -1,0 +1,73 @@
+body {
+	display: grid;
+	grid-template-rows: max-content max-content auto max-content;
+
+	background-color: var(--bg-color);
+}
+
+
+
+nav {
+	padding: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	background-color: var(--hd-color);
+
+	color: var(--txt-bn-color);
+}
+
+nav > h1 {
+	font-size: 1.5rem;
+}
+
+nav > h2 {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+
+header {
+	position: sticky;
+	top: 0;
+
+	display: flex;
+	flex-direction: row;
+
+	background-color: var(--bn-color);
+}
+
+header > a {
+	padding: 1rem .5rem;
+
+	color: var(--txt-bn-color);
+	text-decoration: none;
+
+	transition: opacity .2s linear;
+
+	&:hover {
+		opacity: .5;
+	}
+}
+
+
+main {
+	padding: 1rem 2rem;
+
+	color: var(--txt-d-color);
+}
+main > span {
+	color: var(--bn-color);
+}
+
+
+footer {
+	padding: 1rem .5rem;
+
+	background-color: var(--hd-color);
+
+	color: var(--txt-bn-color);
+}
