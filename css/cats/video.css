@@ -1,31 +1,7 @@
-body {
-    display: grid;
-    grid-template-rows: max-content auto max-content;
-    gap: 5px;
-
-    overflow-x: hidden;
-
-    background-color: var(--bg-color);
-}
-
-
-header {
-    padding: 1rem 0;
-    background-color: var(--hd-color);
-    color: var(--txt-bn-color);
-
-    text-align: center;
-    letter-spacing: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-
-
 main {
 	justify-self: center;
 	width: clamp(0px, 100%, 1366px);
+    padding: 1rem 0;
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -126,4 +102,10 @@ footer {
 
     border-radius: 5px;
     background-color: var(--bn-color);
+}
+
+@media screen and (max-width: 1366px) {
+    main {
+        padding: 1rem;
+    }
 }

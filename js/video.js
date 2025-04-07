@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	const dialog = $('.dialog');
 	const player = $('#player');
+	const downloadBtn = $('#downloadImage')
 
 	player.volume = 50
 
@@ -22,6 +23,7 @@ $(document).ready(function () {
 
 		var newFile = $(this).attr('src');
 		player.attr("src", newFile);
+		downloadBtn.attr('href', newFile)
 
 		dialog.addClass('active')
 
@@ -31,7 +33,7 @@ $(document).ready(function () {
 	});
 
 	$(document).on('click', function (e) {
-		if (!$(e.target).closest('.dialog-cont, .video-btn').length) {
+		if (!$(e.target).closest('.dialog-cont, .video-btn').length || $(e.target).closest('.dialog-close').length) {
 			dialog.removeClass('active')
 			player.get(0).pause();
 		}

@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="css/colors.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/base.css">
 
 	<title>Loader</title>
 </head>
 <body>
 	<style>
-		body {
-			display: grid;
-			place-content: center;
-		}
-
 		.one {
+			align-self: center;
+			justify-self: center;
+
 			width: 300px;
 
 			display: grid;
@@ -47,26 +47,39 @@
 		@keyframes move {
 			0% {
 				transform: translate(0, 0);
-				background-color: #000;
+				background-color: #EEE;
 			}
 			25% {
 				transform: translate(225px, 0);
-				background-color: #777;
+				background-color: #C9C9C9;
 			}
 			50% {
 				transform: translate(225px, 225px);
-				background-color: #444;
+				background-color: #999;
 			}
 			75% {
 				transform: translate(0, 225px);
-				background-color: #222;
+				background-color: #777;
 			}
 			100% {
 				transform: translate(0, 0);
-				background-color: #111;
+				background-color: #555;
 			}
 		}
 	</style>
+
+	<header>
+		<div class="header-titles">
+			<h1 class="header-title">Планети земної групи</h1>
+		</div>
+		<div class="header-links">
+			<a class="header-link" href="test.htm">Home</a>
+			<a class="header-link" href="index.html">CATS</a>
+			<a class="header-link" href="video.htm">Videos</a>
+			<a class="header-link" href="planets.htm">Planets</a>
+			<a class="header-link" href="3103.htm">Loader</a>
+		</div>
+	</header>
 
 	<div class="one">
 		<div class="bl1"></div>

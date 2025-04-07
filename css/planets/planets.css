@@ -10,15 +10,6 @@ main {
 	gap: 1rem;
 }
 
-
-.title {
-	color: var(--txt-d-color);
-	font-size: 2.5rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

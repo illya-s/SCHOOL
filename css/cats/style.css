@@ -9,19 +9,6 @@ body {
 }
 
 
-header {
-    padding: 1rem 0;
-    background-color: var(--hd-color);
-    color: var(--txt-bn-color);
-
-    text-align: center;
-    letter-spacing: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-
 main {
     justify-self: center;
     /* margin: 0 auto; */
