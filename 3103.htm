@@ -12,6 +12,13 @@
 </head>
 <body>
 	<style>
+		:root {
+			--animation-speed: 5s;
+			--anim1-delay: -3.75s;
+			--anim2-delay: -2.5s;
+			--anim3-delay: -1.25s;
+			--anim4-delay: 0s;
+		}
 		.one {
 			align-self: center;
 			justify-self: center;
@@ -31,39 +38,44 @@
 			background-color: #000;
 		}
 		.bl1 {
-			animation: move 2s infinite;
-			animation-delay: -1.5s;
+			animation: move var(--animation-speed) infinite;
+			animation-delay: var(--anim1-delay);
 		} .bl2 {
-			animation: move 2s infinite;
-			animation-delay: -1s;
+			animation: move var(--animation-speed) infinite;
+			animation-delay: var(--anim2-delay);
 		} .bl3 {
-			animation: move 2s infinite;
-			animation-delay: -.5s;
+			animation: move var(--animation-speed) infinite;
+			animation-delay:var(--anim3-delay);
 		} .bl4 {
-			animation: move 2s infinite;
-			animation-delay: 0s;
+			animation: move var(--animation-speed) infinite;
+			animation-delay: var(--anim4-delay);
 		}
 
 		@keyframes move {
 			0% {
 				transform: translate(0, 0);
 				background-color: #EEE;
+				box-shadow: 0 0 10px 5px #EEE;
 			}
 			25% {
 				transform: translate(225px, 0);
-				background-color: #C9C9C9;
+				background-color: #888;
+				box-shadow: 0 0 10px 5px #888;
 			}
 			50% {
 				transform: translate(225px, 225px);
-				background-color: #999;
+				background-color: #333;
+				box-shadow: 0 0 10px 5px #333;
 			}
 			75% {
 				transform: translate(0, 225px);
-				background-color: #777;
+				background-color: #888;
+				box-shadow: 0 0 10px 5px #888;
 			}
 			100% {
 				transform: translate(0, 0);
-				background-color: #555;
+				background-color: #EEE;
+				box-shadow: 0 0 10px 5px #EEE;
 			}
 		}
 	</style>
@@ -78,6 +90,7 @@
 			<a class="header-link" href="video.htm">Videos</a>
 			<a class="header-link" href="planets.htm">Planets</a>
 			<a class="header-link" href="3103.htm">Loader</a>
+			<a class="header-link" href="two_blocks.htm">Two blocks</a>
 		</div>
 	</header>
 
