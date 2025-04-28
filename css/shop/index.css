@@ -1,0 +1,31 @@
+.product-list {
+	padding: 1rem 9rem;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+}
+
+.product-block {
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: max-content max-content max-content;
+	gap: .5rem;
+
+	border-radius: 10px;
+	background-color: var(--bl-d-color);
+}
+
+.product-block > img {
+	width: 100%;
+	height: auto;
+}
+
+.product-name {
+	color: var(--txt-l-color);
+}
+.product-price {
+	color: var(--txt-l-color);
+}
